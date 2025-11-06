@@ -33,7 +33,7 @@ with col6:
     heart_rate = st.number_input("Heart Rate (bpm)", min_value=40, max_value=220, value=110)
 
 # 4️⃣ Row 4: Body Temperature (alone)
-body_temp = st.number_input("Body Temperature (°F)", min_value=90.0, max_value=110.0, value=98.6)
+body_temp = st.number_input("Body Temperature (°F)", min_value=36.0, max_value=110.0, value=98.6)
 
 # Convert gender to numeric (assuming your model used 0 = Female, 1 = Male)
 gender_val = 1 if gender == "Male" else 0
