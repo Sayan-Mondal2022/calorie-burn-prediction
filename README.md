@@ -7,6 +7,28 @@ A machine learning model that predicts calories burned from user activity data u
 
 ---
 
+## 🛠 Tech Stack
+
+### Programming & Core ML:
+
+1. Python - Primary programming language
+2. Scikit-learn - Machine learning library
+3. BaggingRegressor - Ensemble model with 100 estimators
+4. DecisionTreeRegressor - Base learner (max_depth=8)
+5. Pandas - Data manipulation and preprocessing
+6. Joblib - Model serialization and storage
+7. Streamlit - Interactive web application framework
+
+### Machine Learning Architecture:
+
+1. Ensemble Method: Bagging (Bootstrap Aggregating)
+2. Base Algorithm: Decision Tree Regressor
+
+- Model Type: Supervised Learning - Regression
+- Training Approach: Parallel training with bootstrap sampling
+
+---
+
 ## 🔧 Installation and Usage
 
 To run this project locally, follow these steps:
