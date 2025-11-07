@@ -1,9 +1,10 @@
-# Calorie Burn Prediction
+# Calorie Burn Prediction  
 
-A machine learning model that predicts calories burned from user activity data using the XGBoost Regressor.
+The **Calorie Burn Prediction** project is a machine learning-based application designed to estimate the number of calories burned during physical activities using user-provided data such as duration, heart rate, age, gender, and body metrics. The model is built using the **XGBoost Regressor**, a powerful gradient boosting algorithm known for its high performance and accuracy in regression tasks.  
 
+The project involves data preprocessing, feature selection, model training, and evaluation to ensure reliable predictions. The trained model can help users monitor their daily energy expenditure, optimize workout plans, and maintain a healthy lifestyle. The system is further integrated into an interactive interface, allowing users to input their activity data and instantly receive calorie burn predictions.  
 
-[Demo Link](https://sayan-mondal2022-calorie-burn-prediction-app-htorh9.streamlit.app/)
+**[🎥 Demo Link](https://sayan-mondal2022-calorie-burn-prediction-app-htorh9.streamlit.app/)**  
 
 ---
 
@@ -66,3 +67,14 @@ This will launch the web application in your browser.
 │   └── exercise.csv    # Feature data
 └── README.md           # This README file
 ```
+
+---
+
+### 🏆 Acknowledgement  
+
+- **[Python](https://www.python.org/):** Used as the primary programming language for implementing the entire project.  
+- **[Scikit-learn](https://scikit-learn.org/):** Provided the machine learning framework to build the BaggingRegressor ensemble model with DecisionTreeRegressor as the base learner.  
+- **[Pandas](https://pandas.pydata.org/):** Used for efficient data manipulation, cleaning, and preprocessing.  
+- **[Joblib](https://joblib.readthedocs.io/):** Enabled fast model serialization and storage for easy reuse.  
+- **[Streamlit](https://streamlit.io/):** Used to create an interactive and user-friendly web application interface for model deployment.
+
