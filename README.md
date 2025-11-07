@@ -1,8 +1,7 @@
 # Calorie Burn Prediction  
 
-The **Calorie Burn Prediction** project is a machine learning-based application designed to estimate the number of calories burned during physical activities using user-provided data such as duration, heart rate, age, gender, and body metrics. The model is built using the **XGBoost Regressor**, a powerful gradient boosting algorithm known for its high performance and accuracy in regression tasks.  
-
-The project involves data preprocessing, feature selection, model training, and evaluation to ensure reliable predictions. The trained model can help users monitor their daily energy expenditure, optimize workout plans, and maintain a healthy lifestyle. The system is further integrated into an interactive interface, allowing users to input their activity data and instantly receive calorie burn predictions.  
+This project predicts the number of calories burned during exercise using a machine learning model. It employs a `Bagging Regressor` trained on user biometrics (`age, height, weight, gender`) and workout data (`duration, heart rate`).
+The model provides real-time, on-demand calorie predictions through an interactive web application. It helps users monitor and understand their fitness performance more effectively.
 
 <img width="1302" height="854" alt="image" src="https://github.com/user-attachments/assets/19c7008a-185f-40a9-846f-f7a4ad4ff385" />
 
