@@ -4,6 +4,8 @@ The **Calorie Burn Prediction** project is a machine learning-based application 
 
 The project involves data preprocessing, feature selection, model training, and evaluation to ensure reliable predictions. The trained model can help users monitor their daily energy expenditure, optimize workout plans, and maintain a healthy lifestyle. The system is further integrated into an interactive interface, allowing users to input their activity data and instantly receive calorie burn predictions.  
 
+<img width="1302" height="854" alt="image" src="https://github.com/user-attachments/assets/19c7008a-185f-40a9-846f-f7a4ad4ff385" />
+
 **[🎥 Demo Link](https://sayan-mondal2022-calorie-burn-prediction-app-htorh9.streamlit.app/)**  
 
 ---
