@@ -1,81 +1,131 @@
-# Calorie Burn Prediction  
+# 🔥 Calorie Burn Prediction using Machine Learning
 
-This project predicts the number of calories burned during exercise using a machine learning model. It employs a `Bagging Regressor` trained on user biometrics (`age, height, weight, gender`) and workout data (`duration, heart rate`).
-The model provides real-time, on-demand calorie predictions through an interactive web application. It helps users monitor and understand their fitness performance more effectively.
+Predict the number of calories burned during physical activity using advanced regression models.  
+This project combines **data science**, **machine learning**, and **streamlit deployment** to estimate calorie expenditure with **high accuracy**.
 
-<img width="1302" height="854" alt="image" src="https://github.com/user-attachments/assets/19c7008a-185f-40a9-846f-f7a4ad4ff385" />
 
-**[🎥 Demo Link](https://sayan-mondal2022-calorie-burn-prediction-app-htorh9.streamlit.app/)**  
+## 📖 Project Overview
+The **Calorie Burn Prediction** project aims to accurately estimate calories burned during physical activity using measurable human attributes such as **age, gender, height, weight, heart rate**, and **duration**.  
+It’s designed to help users and fitness enthusiasts understand their calorie expenditure and optimize workouts or diets accordingly.
 
----
 
-## 🛠 Tech Stack
+## 🎥 Demo
 
-### Programming & Core ML:
+### 🖼️ Web App Interface
+<img width="1302" height="854" alt="App Screenshot" src="https://github.com/user-attachments/assets/19c7008a-185f-40a9-846f-f7a4ad4ff385" />
 
-1. Python - Primary programming language
-2. Scikit-learn - Machine learning library
-3. BaggingRegressor - Ensemble model with 100 estimators
-4. DecisionTreeRegressor - Base learner (max_depth=8)
-5. Pandas - Data manipulation and preprocessing
-6. Joblib - Model serialization and storage
-7. Streamlit - Interactive web application framework
+### 🚀 Live Demo  
+**[🎥 Try the App Here](https://sayan-mondal2022-calorie-burn-prediction-app-htorh9.streamlit.app/)**  
 
-### Machine Learning Architecture:
-
-1. Ensemble Method: Bagging (Bootstrap Aggregating)
-2. Base Algorithm: Decision Tree Regressor
-
-- Model Type: Supervised Learning - Regression
-- Training Approach: Parallel training with bootstrap sampling
+*(Hosted on Streamlit Cloud — runs the trained model for real-time calorie predictions)*
 
 ---
 
-## 🔧 Installation and Usage
+## 🧠 Technologies Used
+- **Python 3.x**
+- **Pandas**, **NumPy** – Data processing  
+- **Matplotlib**, **Seaborn** – Data visualization  
+- **Scikit-learn** – Model training and evaluation  
+- **Streamlit** – Web app deployment  
+- **Jupyter Notebook** – Model development  
 
-To run this project locally, follow these steps:
 
-1. Clone the repository:
+## 📊 Dataset
+The dataset includes physiological and exercise-related features:
+
+| Feature | Description |
+|----------|--------------|
+| Gender | Male/Female |
+| Age | Person’s age (years) |
+| Height | Height in centimeters |
+| Weight | Weight in kilograms |
+| Duration | Duration of activity (minutes) |
+| Heart Rate | Heart beats per minute |
+| Body Temperature | Body temperature during activity |
+| Calories | Target variable (calories burned) |
+
+> Data preprocessing included encoding categorical data, handling missing values, and normalization for numerical stability.
+
+
+## ⚙️ Project Workflow
+1. **Data Collection** – Import and merge multiple CSV datasets  
+2. **Preprocessing** – Encoding, normalization, and cleaning  
+3. **EDA (Exploratory Data Analysis)** – Correlation plots and visual insights  
+4. **Feature Selection** – Identify key contributors to calorie burn  
+5. **Model Training** – Train regression models (Linear, Random Forest, XGBoost)  
+6. **Model Evaluation** – Compare models and tune hyperparameters  
+7. **Deployment** – Build Streamlit app for interactive predictions  
+
+
+## 📈 Model Evaluation Metrics
+
+| Metric | Value |
+|:--|:--:|
+| **Mean Absolute Error (MAE)** | 3.23 |
+| **Mean Squared Error (MSE)** | 21.49 |
+| **Root Mean Squared Error (RMSE)** | 4.64 |
+| **R² Score** | **0.9945 ✅** |
+
+📊 **Interpretation:**  
+An **R² of 0.9945** signifies excellent predictive performance, meaning the model explains over **99% of the variance** in calorie burn outcomes.
+
+
+## 🏆 Results
+- Achieved **R² = 0.9945** with extremely low error metrics.  
+- Key features affecting calorie burn: **Heart Rate**, **Duration**, and **Body Temperature**.  
+- Integrated with **Streamlit** for user-friendly, interactive predictions.  
+
+
+## 💻 Installation & Usage
+
+### 1️⃣ Clone the Repository
 ```bash
 git clone https://github.com/Sayan-Mondal2022/calorie-burn-prediction.git
 cd calorie-burn-prediction
 ```
 
-2. Install the required dependencies:
+### 2️⃣ Create the Virtual Environment and activate the .venv
+```bash
+python -m venv .venv
+
+# TO activate the .venv
+source .venv/Scripts/activate
+```
+
+### 3️⃣ Install Required Packages
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Run the Streamlit app:
+### 4️⃣ Run the Streamlit App
 ```bash
 streamlit run app.py
 ```
-This will launch the web application in your browser.
 
----
-
-## 📁 Repository Structure
+## 📂 Project Structure
 
 ```bash
-.
-├── app.py              # The Streamlit web application
-├── model.ipynb         # Jupyter Notebook for model development and evaluation
-├── model.py            # Python script to train and save the model
-├── model.pkl           # Saved (serialized) machine learning model
-├── requirements.txt    # List of Python dependencies
+calorie-burn-prediction/
 ├── datasets/
-│   ├── calories.csv    # Target variable data
-│   └── exercise.csv    # Feature data
-└── README.md           # This README file
+│   ├── calories.csv
+│   ├── exercise.csv
+├── model.ipynb
+├── model.pkl
+├── app.py
+├── requirements.txt
+└── README.md
 ```
 
----
+## 🙏 Acknowledgement
 
-### 🏆 Acknowledgement  
+I would like to acknowledge the open-source tools and technologies that made this project possible.  
+This project was developed using a powerful Python ecosystem including:
 
-- **[Python](https://www.python.org/):** Used as the primary programming language for implementing the entire project.  
-- **[Scikit-learn](https://scikit-learn.org/):** Provided the machine learning framework to build the BaggingRegressor ensemble model with DecisionTreeRegressor as the base learner.  
-- **[Pandas](https://pandas.pydata.org/):** Used for efficient data manipulation, cleaning, and preprocessing.  
-- **[Joblib](https://joblib.readthedocs.io/):** Enabled fast model serialization and storage for easy reuse.  
-- **[Streamlit](https://streamlit.io/):** Used to create an interactive and user-friendly web application interface for model deployment.
+- **Pandas** and **NumPy** for efficient data handling  
+- **Matplotlib** and **Seaborn** for insightful data visualization  
+- **Scikit-learn** for robust model building and evaluation  
+- **Streamlit** for deploying an interactive web application  
 
+I also extend my gratitude to the creators and providers of the **Calorie and Exercise dataset**, which served as the foundation for model training and evaluation.
+
+⭐ *Thank you for taking the time to explore my project! If you found it helpful, please consider giving it a star on GitHub — it truly motivates me to create more!* 🚀
